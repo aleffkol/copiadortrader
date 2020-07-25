@@ -30,6 +30,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/erpodoo" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -37,7 +38,7 @@
       <recent name="F:\O.B\iqoptionapi-master\iqoptionapi-master\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.copiador_entradas">
+  <component name="RunManager" selected="Python.copy_trader_aleff">
     <configuration name="copiador_entradas" type="PythonConfigurationType" factoryName="Python" singleton="false" nameIsGenerated="true">
       <module name="iqoptionapi-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,7 +133,8 @@
       <workItem from="1595552972464" duration="15803000" />
       <workItem from="1595601525764" duration="10422000" />
       <workItem from="1595615457421" duration="14366000" />
-      <workItem from="1595636783636" duration="6325000" />
+      <workItem from="1595636783636" duration="7243000" />
+      <workItem from="1595685488327" duration="307000" />
     </task>
     <servers />
   </component>
@@ -148,26 +150,30 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1595532063522" />
-    <state width="1557" height="702" key="GridCell.Tab.0.bottom" timestamp="1595650675442">
+    <state width="1557" height="147" key="GridCell.Tab.0.bottom" timestamp="1595685821728">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="702" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1595650675442" />
-    <state width="1557" height="702" key="GridCell.Tab.0.center" timestamp="1595650675442">
+    <state width="1557" height="147" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1595685821728" />
+    <state width="1557" height="147" key="GridCell.Tab.0.center" timestamp="1595685821727">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="702" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1595650675442" />
-    <state width="1557" height="702" key="GridCell.Tab.0.left" timestamp="1595650675441">
+    <state width="1557" height="147" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1595685821727" />
+    <state width="1557" height="147" key="GridCell.Tab.0.left" timestamp="1595685821727">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="702" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1595650675441" />
-    <state width="1557" height="702" key="GridCell.Tab.0.right" timestamp="1595650675442">
+    <state width="1557" height="147" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1595685821727" />
+    <state width="1557" height="147" key="GridCell.Tab.0.right" timestamp="1595685821728">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="702" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1595650675442" />
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1595636785056">
+    <state width="1557" height="147" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1595685821728" />
+    <state x="301" y="72" key="SettingsEditor" timestamp="1595685814538">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1595636785056" />
+    <state x="301" y="72" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1595685814538" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1595685565206">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1595685565206" />
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1595466236847">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -187,7 +193,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/iqoptionapi_master$example.coverage" NAME="example Coverage Results" MODIFIED="1595450430759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iqoptionapi-master" />
     <SUITE FILE_PATH="coverage/iqoptionapi_master$copy_aleff.coverage" NAME="copy_aleff Coverage Results" MODIFIED="1595387209267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iqoptionapi-master" />
-    <SUITE FILE_PATH="coverage/iqoptionapi_master$copy_trader_aleff.coverage" NAME="copy_trader_aleff Coverage Results" MODIFIED="1595650585024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iqoptionapi-master" />
+    <SUITE FILE_PATH="coverage/iqoptionapi_master$copy_trader_aleff.coverage" NAME="copy_trader_aleff Coverage Results" MODIFIED="1595685821717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iqoptionapi-master" />
     <SUITE FILE_PATH="coverage/iqoptionapi_master$copiador_entradas.coverage" NAME="copiador_entradas Coverage Results" MODIFIED="1595649675753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iqoptionapi-master" />
   </component>
 </project>

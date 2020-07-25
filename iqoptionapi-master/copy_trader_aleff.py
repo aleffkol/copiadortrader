@@ -1,7 +1,7 @@
 from iqoptionapi.stable_api import IQ_Option
 import time, json, logging, configparser
 import re
-from getpass import getpass
+import getpass
 from datetime import datetime, date, timedelta
 from dateutil import tz
 import sys
@@ -340,7 +340,8 @@ def menu_bot(API):
 print('Digite suas credenciais')
 
 email = input('Digite o seu e-mail (IQOption): ')
-senha = input('Digite a sua senha (IQOption): ')
+# senha = input('Digite o sua senha (IQOption): ')
+senha = getpass.getpass("Digite o sua senha (IQOption): ")
 print('=-='*20)
 
 
