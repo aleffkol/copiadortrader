@@ -97,7 +97,7 @@ def alterar_nivel_soros(soros):
             if(nivel_soros>=1):
                 print(f'O nível de soros agora é: {nivel_soros}')
                 return nivel_soros
-            print('Não pode ser valor igual ou abaixo de 0.')
+            print('\033[31mNão pode ser valor igual ou abaixo de 0.\033[m')
     return soros
 def alterar_stop_win():
     stop_win = 0
@@ -126,14 +126,10 @@ def alterar_stop_loss():
     return stop_loss
 
 def contador_segundos(segundos):
-    contador = ''
     for i in range(1, segundos):
         print('\t\t.')
-        # if(i<=1):
-        #     print(f'{i} segundo')
-        # else:
-        #     print(f'{i} segundos')
         time.sleep(1)
+
 def alerar_tempo_expiracao():
     expiracao = 0
     while(expiracao!=1 or expiracao!=5 or expiracao!=15):
@@ -164,7 +160,7 @@ def realizar_entrada(moeda, entrada, direcao, timeframe):
                     return 'loss', 0
                 break
     else:
-        return 'error', 0, False
+        return 'error', 0
 
 #ENTRADAS
 def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, expiracao, tempo_expiracao, stop_loss, stop_win):
@@ -219,24 +215,23 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
                 print('\n\t\tEste trader está dentro do ranking selecionado.')
                 print(f'''\t\t[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}''')
 
+                #Soros
                 if(resultado=='win' and contador_soros<niveis_soros and soros==True):
                     resultado, lucro = realizar_entrada(moeda, entrada+lucro, trades[0]['instrument_dir'], tempo_expiracao)
                     contador_soros+=1
                     print('\t\t-> ', resultado, '/', lucro, '\n\n')
 
+                #Entrada caso soros tenha dado errado
                 elif(resultado=='loss'):
                     contador_soros = 1
                     resultado, lucro = realizar_entrada(moeda, entrada, trades[0]['instrument_dir'],tempo_expiracao)
                     print('\t\t-> ', resultado, '/', lucro, '\n\n')
+
+                #Entrada comum
                 else:
                     resultado, lucro = realizar_entrada(moeda, entrada, trades[0]['instrument_dir'],tempo_expiracao)
                     print('\t\t-> ', resultado, '/', lucro, '\n\n')
 
-                # #Realizando entrada
-                # resultado, lucro = realizar_entrada(moeda, entrada, trades[0]['instrument_dir'], tempo_expiracao)
-                # #Printando resultado
-                # print('\t\t-> ', resultado, '/', lucro, '\n\n')
-                # print('=-=' * 60)
             else:
                 print('\n\t\tEste trader não está dentro do ranking selecionado.')
                 print(f'''\t\t[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}''')
