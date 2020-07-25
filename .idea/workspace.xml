@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="72105be2-62d6-43bc-8375-7cfae41f885b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1f0JNQG6kkJdlCMe09c4hyu9TUY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/erpodoo" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\O.B\iqoptionapi-master\iqoptionapi-master" />
+      <recent name="F:\O.B\iqoptionapi-master\iqoptionapi-master\tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.copy_trader_aleff">
+    <configuration name="copiador_entradas" type="PythonConfigurationType" factoryName="Python" singleton="false" nameIsGenerated="true">
+      <module name="iqoptionapi-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\kluiv\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/iqoptionapi-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iqoptionapi-master/copiador_entradas.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="copy_trader_aleff" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="iqoptionapi-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\kluiv\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/iqoptionapi-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iqoptionapi-master/copy_trader_aleff.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="example" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="iqoptionapi-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\kluiv\AppData\Local\Programs\Python\Python37\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/iqoptionapi-master" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/iqoptionapi-master/example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.example" />
+      <item itemvalue="Python.copiador_entradas" />
+      <item itemvalue="Python.copy_trader_aleff" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72105be2-62d6-43bc-8375-7cfae41f885b" name="Default Changelist" comment="" />
+      <created>1595349035549</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595349035549</updated>
+      <workItem from="1595349036764" duration="768000" />
+      <workItem from="1595349837868" duration="10529000" />
+      <workItem from="1595382336982" duration="5913000" />
+      <workItem from="1595425854884" duration="973000" />
+      <workItem from="1595430295365" duration="19168000" />
+      <workItem from="1595462763562" duration="10781000" />
+      <workItem from="1595475006034" duration="7602000" />
+      <workItem from="1595482655493" duration="2926000" />
+      <workItem from="1595516462054" duration="7164000" />
+      <workItem from="1595552972464" duration="15803000" />
+      <workItem from="1595601525764" duration="10422000" />
+      <workItem from="1595615457421" duration="14366000" />
+      <workItem from="1595636783636" duration="1271000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1595569472952">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="254" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1595569472952" />
+    <state x="580" y="185" key="FileChooserDialogImpl" timestamp="1595532063522">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="580" y="185" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1595532063522" />
+    <state width="1557" height="363" key="GridCell.Tab.0.bottom" timestamp="1595637444421">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="363" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1595637444421" />
+    <state width="1557" height="363" key="GridCell.Tab.0.center" timestamp="1595637444420">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="363" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1595637444420" />
+    <state width="1557" height="363" key="GridCell.Tab.0.left" timestamp="1595637444420">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="363" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1595637444420" />
+    <state width="1557" height="363" key="GridCell.Tab.0.right" timestamp="1595637444421">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state width="1557" height="363" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1595637444421" />
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog" timestamp="1595636785056">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="254" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1595636785056" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1595466236847">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1595466236847" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/iqoptionapi-master/iqoptionapi/stable_api.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/iqoptionapi_master$example.coverage" NAME="example Coverage Results" MODIFIED="1595450430759" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iqoptionapi-master" />
+    <SUITE FILE_PATH="coverage/iqoptionapi_master$copy_aleff.coverage" NAME="copy_aleff Coverage Results" MODIFIED="1595387209267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iqoptionapi-master" />
+    <SUITE FILE_PATH="coverage/iqoptionapi_master$copy_trader_aleff.coverage" NAME="copy_trader_aleff Coverage Results" MODIFIED="1595636944319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iqoptionapi-master" />
+    <SUITE FILE_PATH="coverage/iqoptionapi_master$copiador_entradas.coverage" NAME="copiador_entradas Coverage Results" MODIFIED="1595617523340" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iqoptionapi-master" />
+  </component>
+</project>
