@@ -175,7 +175,7 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
     contador_segundos(5)
 
     #Pegando IDs dos traders
-    lista_dados_traders = API.get_leader_board('Worldwide',1,ranking,0)
+    lista_dados_traders = api.get_leader_board('Worldwide',1,ranking,0)
     lista_top_traders = []
     if(ranking>=0):
         for posicao in lista_dados_traders['result']['positional']:
@@ -188,7 +188,7 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
     mostrar_perfil_atual(entrada, moeda, banca, ranking, soros, niveis_soros, api.get_balance(),expiracao, stop_win, stop_loss)
 
     #Capturando entradas
-    API.subscribe_live_deal(tipo_bd, moeda, expiracao, 10)
+    api.subscribe_live_deal(tipo_bd, moeda, expiracao, 10)
     sinal_antigo = 0
 
     print('=-='*20)

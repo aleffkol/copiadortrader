@@ -12,6 +12,6 @@ stop_win = 0
 
 valor_minimo = 1
 filtro_pais = todos
-filtro_top_traders = 1
+filtro_top_traders = 300
 filtro_diferenca_sinal = 2
 seguir_ids =

@@ -6,7 +6,7 @@ import sys
 
 logging.disable(level=(logging.DEBUG))
 
-API = IQ_Option('sheldonsobral12@gmail.com', 'shureck12')
+API = IQ_Option('', '')
 API.connect()
 
 API.change_balance('PRACTICE')  # PRACTICE / REAL
