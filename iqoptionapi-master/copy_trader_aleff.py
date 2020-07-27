@@ -341,8 +341,8 @@ print('\033[7;30mBem-Vindo ao Copy Trader AKOL\033[m\n')
 print('\033[32mDigite suas credenciais\033[m')
 
 email = input('Digite o seu e-mail (IQOption): ')
-senha = input('Digite o sua senha (IQOption): ')
-# senha = getpass.getpass("Digite o sua senha (IQOption): ")
+# senha = input('Digite o sua senha (IQOption): ')
+senha = getpass.getpass("Digite o sua senha (IQOption): ")
 print('=-='*20)
 
 
