@@ -193,7 +193,7 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
 
     print('=-='*20)
     print(f'\t\tIniciando a captura de entradas no ativo {moeda}')
-    print(f'\t\tAs entradas de cores vermelhas é porquê não está dentro do top ranking selecionado(Top: {ranking})\n')
+    print(f'\033[31m\t\tAs entradas de cores vermelhas é porquê não está dentro do top ranking selecionado(Top: {ranking})\n\033[m')
 
     contador_soros = 1
     resultado = ''
@@ -211,9 +211,9 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
         if(len(trades)>0 and trades[0]['user_id']!=sinal_antigo):
 
             if(trades[0]['user_id'] in lista_top_traders):
-                print('=-='*60)
+                print('=-='*30)
                 # print('\n\t\tEste trader está dentro do ranking selecionado.')
-                print(f'''\033[32m\t\t[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}\033[m''')
+                print(f'''\033[32m\t\t\n[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}\033[m''')
 
                 #Soros
                 if(resultado=='win' and contador_soros<niveis_soros and soros==True):
@@ -234,7 +234,7 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
 
             else:
                 # print('\n\t\tEste trader não está dentro do ranking selecionado.')
-                print(f'''\033[31m\t\t[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}\033[m''')
+                print(f'''\033[31m\t\t\n[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}\033[m''')
 
             sinal_antigo = trades[0]['user_id']
 #BOT
@@ -354,10 +354,10 @@ print('======ESTABELECENDO CONEXÃO ======')
 
 #Verificando conexão
 if API.check_connect():
-	print(' Conectado com sucesso!')
+	print(' \033[32mConectado com sucesso!\033[m')
 else:
-	print(' Erro ao conectar')
-	input(' Aperte enter para sair')
+	print(' \033[31mErro ao conectar\033[m')
+	input(' \033[31mperte enter para sair\033[m')
 	sys.exit()
 time.sleep(2)
 
