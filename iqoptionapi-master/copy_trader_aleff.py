@@ -356,7 +356,7 @@ if API.check_connect():
 	print(' Conectado com sucesso!')
 else:
 	print(' Erro ao conectar')
-	input(' Aperte enter para sair')
+	input(' \033[31mAperte enter para sair\033[m')
 	sys.exit()
 time.sleep(2)
 

@@ -1,7 +1,7 @@
 [GERAL]
-paridade = AUDCAD-OTC
+paridade = NZDUSD-OTC
 valor_entrada = 5
-timeframe = 1
+timeframe = 5
 
 martingale = N
 sorosgale = N
@@ -12,6 +12,6 @@ stop_win = 0
 
 valor_minimo = 1
 filtro_pais = todos
-filtro_top_traders = 300
+filtro_top_traders = 500
 filtro_diferenca_sinal = 2
 seguir_ids =
