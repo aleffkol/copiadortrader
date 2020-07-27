@@ -17,22 +17,22 @@ def selecionar_tipo_conta(API):
         conta_real_pratica = input('\nInforme em qual conta você deseja operar\nReal ou Treino: ')
         if(conta_real_pratica.upper().__eq__('REAL')):
             API.change_balance('REAL')
-            print(f'\nVocê selecionou a banca: {conta_real_pratica}.')
+            print(f'\033[32m\nVocê selecionou a banca: {conta_real_pratica}.\033[m')
             return 'REAL'
         if(conta_real_pratica.upper().__eq__('TREINO')):
             API.change_balance('PRACTICE')
-            print(f'\nVocê selecionou a banca: {conta_real_pratica}.')
+            print(f'\033[32m\nVocê selecionou a banca: {conta_real_pratica}.\033[m')
             return 'TREINO'
-        print('\nVocê informou o nome inválido.')
+        print('\033[31m\nVocê informou o nome inválido.\033[m')
 
 def selecionar_valor_entrada():
     valor = 0
     while valor<=0:
         valor = float(input('\nDigitar o valor da(s) entrada(s):'))
         if(valor>=1):
-            print(f'O valor da(s) sua(s) entrada(s) agora é: {valor}')
+            print(f'\033[32mO valor da(s) sua(s) entrada(s) agora é: {valor}\033[m')
             return valor
-        print('Não pode ser valor abaixo ou igual a 0')
+        print('\033[31mNão pode ser valor abaixo ou igual a 0\033[m')
     return valor
 
 def selecionar_par_moedas(lista_ativos):
@@ -41,10 +41,10 @@ def selecionar_par_moedas(lista_ativos):
         par = input('\nInforme o par de moedas: ')
         par = par.upper()
         if(par in lista_ativos):
-            print(f'O par de moeda onde irá operar é {par}')
+            print(f'\033[32mO par de moeda onde irá operar é {par}\033[m')
             return par
 
-        print('Não existe este par de moedas.')
+        print('\033[31mNão existe este par de moedas.\033[m')
     return par
 
 def selecionar_top_ranking():
@@ -52,9 +52,9 @@ def selecionar_top_ranking():
     while ranking<=0:
         ranking = int(input('\nInforme traders de até que colocoção deseja copiar: '))
         if(ranking>=1):
-            print(f'Você está copiando traders de colocação até {ranking}')
+            print(f'\033[32mVocê está copiando traders de colocação até {ranking}\033[m')
             return ranking
-        print('Digite um valor maior ou igual a 1.')
+        print('\033[31mDigite um valor maior ou igual a 1.\033[m')
     return ranking
 
 def mostrar_perfil_atual(valor_entrada, par_moeda, tipo_banca, top_ranking, soros, niveis_soros, valor_banca, expiracao, stop_loss, stop_win):
@@ -79,15 +79,15 @@ def ativar_soros(soros, niveis_soros):
     niveis_soros = 0
     if(soros==False):
         soros = True
-        print('O soros foi ativado.')
+        print('\033[32mO soros foi ativado.\033[m')
         niveis_soros = alterar_nivel_soros(soros)
         return soros, niveis_soros
     if(soros == True):
         soros = False
         niveis_soros = 0
-        print('O soros foi desativado.')
+        print('\033[32mO soros foi desativado.\033[m')
         return soros, niveis_soros
-    print('Algo deu errado')
+    print('\033[31mAlgo deu errado\033[m')
 
 def alterar_nivel_soros(soros):
     nivel_soros = 0
@@ -95,7 +95,7 @@ def alterar_nivel_soros(soros):
         while(nivel_soros<=0):
             nivel_soros = int(input('Informe o nível do soros: '))
             if(nivel_soros>=1):
-                print(f'O nível de soros agora é: {nivel_soros}')
+                print(f'\033[32mO nível de soros agora é: {nivel_soros}\033[m')
                 return nivel_soros
             print('\033[31mNão pode ser valor igual ou abaixo de 0.\033[m')
     return soros
@@ -104,12 +104,12 @@ def alterar_stop_win():
     while(stop_win<=0):
         stop_win = int(input('Informe o valor do seu stop win: '))
         if(stop_win==0):
-            print('O seu stop win é igual a 0\n Ou seja, não existe stop win')
+            print('\033[32mO seu stop win é igual a 0\n Ou seja, não existe stop win\033[m')
             return stop_win
         if(stop_win>0):
-            print(f'O seu stop win é {stop_win}')
+            print(f'\033[32mO seu stop win é {stop_win}\033[m')
             return stop_win
-        print('Informe um valor de 0 em diante.')
+        print('\033[31mInforme um valor de 0 em diante.\033[m')
     return stop_win
 
 def alterar_stop_loss():
@@ -117,12 +117,12 @@ def alterar_stop_loss():
     while(stop_loss<=0):
         stop_loss = int(input('Informe o valor do seu stop loss: '))
         if(stop_loss==0):
-            print('O seu stop loss é igual a 0\n Ou seja, não existe stop loss')
+            print('\033[32mO seu stop loss é igual a 0\n Ou seja, não existe stop loss\033[m')
             return stop_loss
         if(stop_loss>0):
-            print(f'O seu stop loss é {stop_loss}')
+            print(f'\033[32mO seu stop loss é {stop_loss}\033[m')
             return stop_loss
-        print('Informe um valor de 0 em diante.')
+        print('\033[31mInforme um valor de 0 em diante.\033[m')
     return stop_loss
 
 def contador_segundos(segundos):
@@ -135,15 +135,15 @@ def alerar_tempo_expiracao():
     while(expiracao!=1 or expiracao!=5 or expiracao!=15):
         expiracao = int(input('\nQual o tempo de expiração em minutos que você quer copiar? (1, 5 ou 15): '))
         if(expiracao==1):
-            print('O tempo de expiração foi alterado para 1 minuto')
+            print('\033[32mO tempo de expiração foi alterado para 1 minuto\033[m')
             return 'PT1M', 1
         if(expiracao==5):
-            print('O tempo de expiração foi alterado para 5 minuto')
+            print('\033[32mO tempo de expiração foi alterado para 5 minuto\033[m')
             return 'PT5M',5
         if(expiracao==15):
-            print('O tempo de expiração foi alterado para 15 minuto')
+            print('\033[32mO tempo de expiração foi alterado para 15 minuto\033[m')
             return 'PT15M',15
-        print('Digite um tempo de expiração válida (1, 5 ou 15)')
+        print('\033[31mDigite um tempo de expiração válida (1, 5 ou 15)\033[m')
     return 'PT1M',1
 
 def realizar_entrada(moeda, entrada, direcao, timeframe):
@@ -193,7 +193,7 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
 
     print('=-='*20)
     print(f'\t\tIniciando a captura de entradas no ativo {moeda}')
-    # print(f'\t\tAs entradas de cores vermelhas é porquê não está dentro do top ranking selecionado(Top: {ranking})\n')
+    print(f'\t\tAs entradas de cores vermelhas é porquê não está dentro do top ranking selecionado(Top: {ranking})\n')
 
     contador_soros = 1
     resultado = ''
@@ -201,10 +201,10 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
     while True:
 
         if((banca_inicial+stop_win)<=api.get_balance() and stop_win>0):
-            print('Você já atingiu o seu stop win.\nParabéns')
+            print('\033[32mVocê já atingiu o seu stop win.\nParabéns\033[m')
             sys.exit()
         if(stop_loss>0 and (banca_inicial-stop_loss)>=api.get_balance()):
-            print('Você já atingiu o seu stop loss.\nNão fique triste')
+            print('\033[31mVocê já atingiu o seu stop loss.\nNão fique triste\033[m')
             sys.exit()
 
         trades = API.get_live_deal(tipo_bd, moeda, expiracao)
@@ -212,8 +212,8 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
 
             if(trades[0]['user_id'] in lista_top_traders):
                 print('=-='*60)
-                print('\n\t\tEste trader está dentro do ranking selecionado.')
-                print(f'''\t\t[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}''')
+                # print('\n\t\tEste trader está dentro do ranking selecionado.')
+                print(f'''\033[32m\t\t[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}\033[m''')
 
                 #Soros
                 if(resultado=='win' and contador_soros<niveis_soros and soros==True):
@@ -233,8 +233,8 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
                     print('\t\t-> ', resultado, '/', lucro, '\n\n')
 
             else:
-                print('\n\t\tEste trader não está dentro do ranking selecionado.')
-                print(f'''\t\t[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}''')
+                # print('\n\t\tEste trader não está dentro do ranking selecionado.')
+                print(f'''\033[31m\t\t[{trades[0]['flag']}] {trades[0]['name']} ({trades[0]['user_id']}) / Ativo: {moeda} / Valor da entrada: {trades[0]['amount_enrolled']} / Direção: {trades[0]['instrument_dir']} / Expiração: {trades[0]['expiration_type']}\033[m''')
 
             sinal_antigo = trades[0]['user_id']
 #BOT
@@ -334,14 +334,15 @@ def menu_bot(API):
             print('O programa será fechado.')
             sys.exit()
         else:
-            print('\nVocê selecionou um opção inválida\nTente novamente')
+            print('\033[31m\nVocê selecionou um opção inválida\nTente novamente\033[m')
 
 #Dados do usuário
-print('Digite suas credenciais')
+print('\033[7;30mBem-Vindo ao Copy Trader AKOL\033[m\n')
+print('\033[32mDigite suas credenciais\033[m')
 
 email = input('Digite o seu e-mail (IQOption): ')
-# senha = input('Digite o sua senha (IQOption): ')
-senha = getpass.getpass("Digite o sua senha (IQOption): ")
+senha = input('Digite o sua senha (IQOption): ')
+# senha = getpass.getpass("Digite o sua senha (IQOption): ")
 print('=-='*20)
 
 
@@ -356,7 +357,7 @@ if API.check_connect():
 	print(' Conectado com sucesso!')
 else:
 	print(' Erro ao conectar')
-	input(' \033[31mAperte enter para sair\033[m')
+	input(' Aperte enter para sair')
 	sys.exit()
 time.sleep(2)
 
