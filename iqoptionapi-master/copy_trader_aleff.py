@@ -185,7 +185,7 @@ def iniciar_entradas(api, moeda, entrada, ranking, banca, soros, niveis_soros, e
 
     #Mostrando valores
     print('\n')
-    mostrar_perfil_atual(entrada, moeda, banca, ranking, soros, niveis_soros, api.get_balance(),expiracao, stop_win, stop_loss)
+    mostrar_perfil_atual(entrada, moeda, banca, ranking, soros, niveis_soros, api.get_balance(),expiracao, stop_loss, stop_win)
 
     #Capturando entradas
     api.subscribe_live_deal(tipo_bd, moeda, expiracao, 10)
