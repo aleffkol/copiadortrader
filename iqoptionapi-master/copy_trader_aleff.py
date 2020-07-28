@@ -127,8 +127,8 @@ def alterar_stop_loss():
 def usuario_robô():
     id_senha = [['italo','993069323'],['sheldon','87054460']]
     usuario = input('Digite o usuário fornecido pelo admnistrador: ')
-    senha = input('Digite a senha fornecido pelo admnistrador: ')
-    # senha = getpass.getpass("Digite a senha fornecida pelo admnistrador: ")
+    # senha = input('Digite a senha fornecido pelo admnistrador: ')
+    senha = getpass.getpass("Digite a senha fornecida pelo admnistrador: ")
 
     for i in range(len(id_senha)):
         for j in range(0, 1):
