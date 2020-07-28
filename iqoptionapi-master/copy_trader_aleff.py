@@ -125,7 +125,7 @@ def alterar_stop_loss():
         print('\033[31mInforme um valor de 0 em diante.\033[m')
     return stop_loss
 def usuario_robô():
-    id_senha = [['italo','993069323'],['sheldon','87054460']]
+    id_senha = [['italo','993069323'],['sheldon','87054460'],['igor', '993456837']]
     usuario = input('Digite o usuário fornecido pelo admnistrador: ')
     # senha = input('Digite a senha fornecido pelo admnistrador: ')
     senha = getpass.getpass("Digite a senha fornecida pelo admnistrador: ")
