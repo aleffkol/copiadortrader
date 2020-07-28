@@ -124,6 +124,22 @@ def alterar_stop_loss():
             return stop_loss
         print('\033[31mInforme um valor de 0 em diante.\033[m')
     return stop_loss
+def usuario_robô():
+    id_senha = [['italo','993069323'],['sheldon','87054460']]
+    usuario = input('Digite o usuário fornecido pelo admnistrador: ')
+    senha = input('Digite a senha fornecido pelo admnistrador: ')
+    # senha = getpass.getpass("Digite a senha fornecida pelo admnistrador: ")
+
+    for i in range(len(id_senha)):
+        for j in range(0, 1):
+            usuario_lista = id_senha[i][j]
+            senha_lista = id_senha[i][j+1]
+            if(usuario_lista==usuario and senha_lista==senha):
+                print('\033[32mO usuário encontra-se na base de dados.\033[m\n')
+                print('\t\tLogando')
+                contador_segundos(5)
+                return True
+    return False
 
 def contador_segundos(segundos):
     for i in range(1, segundos):
@@ -337,8 +353,19 @@ def menu_bot(API):
             print('\033[31m\nVocê selecionou um opção inválida\nTente novamente\033[m')
 
 #Dados do usuário
+
+
 print('\033[7;30mBem-Vindo ao Copy Trader AKOL\033[m\n')
-print('\033[32mDigite suas credenciais\033[m')
+print('\033[32mDigite suas credenciais\033[m\n')
+conexao_lista_usuarios = False
+while conexao_lista_usuarios!=True:
+    conexao_lista_usuarios = usuario_robô()
+    if(conexao_lista_usuarios == True):
+        continue
+        # print('Usuário encontra-se na base de dados.')
+    else:
+        print('\033[31mVocê digitou uma crendencial inválida\nTente Novamente\n\033[m')
+
 
 email = input('Digite o seu e-mail (IQOption): ')
 # senha = input('Digite o sua senha (IQOption): ')
